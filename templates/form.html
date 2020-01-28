@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Hello all</h1>
+<form action = "{{ url_for('is_prime_forms') }}" method="post">
+    <label>Enter a number: </label>
+    <input type="text" name="number">
+    <button>Submit</button>
+</form>
+
+{% endblock%}

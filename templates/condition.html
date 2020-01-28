@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>This is the space for body content</h1>
+{% if day == 0 %}
+    <h3>The day is even, park on the even side</h3>
+{% else %}
+    <h3>The day is odd, park on the odd side</h3>
+{% endif %}
+
+{% endblock %}

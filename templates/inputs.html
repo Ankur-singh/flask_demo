@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Hello all</h1>
+<form action = "{{ url_for('predict') }}" method="post">
+    {% for feature in features %}
+        <p>
+            <label>{{ feature }}</label>
+            <input type="text" name="{{ feature }}">
+        </p>
+    {% endfor %}
+    <button>Submit</button>
+</form>
+
+{% endblock%}
