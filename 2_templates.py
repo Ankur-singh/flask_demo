@@ -29,10 +29,6 @@ def jinja_list():
 @app.route('/condition')
 def jinja_conditions():
     day = int(np.random.rand(1) * 10) % 2
-    if day == 1:
-        text = ''
-    else:
-        text = 'else'
     return render_template('condition.html', text = day)
 
 if __name__ == '__main__':
